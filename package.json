@@ -1,0 +1,12 @@
+{
+  "name": "granite-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A dark syntax theme for Atom that's a lot Obsidian and a little Boron.",
+  "repository": "https://github.com/nick-adams/granite-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}

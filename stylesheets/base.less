@@ -1,0 +1,145 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
+// for a full listing of what's available.
+
+@import "ui-variables";
+@import "colors";
+
+.editor-colors {
+  background-color: #293134;
+  //color: #e0e2e4;
+  color: #e4e4e0;
+}
+
+.editor {
+
+  line-height: 1.5;
+
+  .invisible-character,
+  .indent-guide {
+    color: #344447;
+  }
+
+  .gutter {
+    background-color: #2b3437;
+    //border-right: solid 2px #384145;
+  }
+
+  .gutter .line-number {
+    opacity: 1;
+    color: #4d6368;
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: #4d6368;
+    background-color: #1f282b;
+    border-bottom: dotted 1px #4d6368;
+  }
+  .gutter .cursor-line {
+    color: #8bafbb;
+  }
+
+// CODE ---
+
+  // Code Area Background
+  .scroll-view {
+    padding-left: 5px;
+  }
+
+  .cursor {
+    border-color: #e3fafd;
+  }
+
+  .selection .region {
+    background-color: #586e75;
+    color: #002b36;
+  }
+
+  .line-number.cursor-line-no-selection {
+    background-color: #586e75;
+  }
+}
+
+.bracket-matcher {
+  background-color: #586e75;
+  opacity: 0.5;
+}
+
+.comment {
+  //color: #7d7d7d;
+  color: #808789;
+  background-color: #2e3739;
+}
+
+.entity {
+  //color: #d7c681;
+  //color: #a7b689;
+  // color: #c5b96a;
+  //color: #fad075;
+  //color: #c1d288;
+  color: #f6d07a;
+}
+
+.keyword {
+  color: #ce805e;
+}
+
+.storage.type {
+  color: #d040c1; //pink
+}
+
+.constant {
+  color: #76a8d6;
+
+  &.numeric,
+  &.boolean {
+    color: #d05440;
+  }
+}
+
+.variable {
+  color: #93bd54;
+}
+
+.delimiter, .brace {
+  color: #e0e2e4;
+}
+
+.delimiter.period {
+  color: #d040c1; //pink
+}
+
+.invalid.deprecated {
+  text-decoration: underline;
+  color: @red;
+}
+
+.invalid.illegal {
+  color: @red;
+}
+
+.string {
+  color: #99ad66;
+
+  .constant.character.escape {
+    color: @red;
+  }
+
+  &.regexp {
+    color: @cyan;
+
+    .source.ruby.embedded,
+    .string.regexp.arbitrary-repitition {
+      color: @red;
+    }
+  }
+}
+
+// ERB
+.erb.begin,
+.erb.end {
+  color: #dd5c5c;
+}
